@@ -1,0 +1,31 @@
+.section {
+  text-align: center;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  padding: 60px 0;
+}
+.section h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+.section h1 span {
+  color: var(--main-color);
+  margin-right: 4px;
+}
+
+.underline {
+  display: block;
+  text-align: center;
+  width: 8rem;
+  background-color: var(--main-color);
+  height: 4px;
+  border-radius: 2px;
+  margin: 0 auto 0 auto;
+}
+
+.text {
+  margin: 2rem auto;
+  line-height: 1.5;
+
+  width: 350px;
+}

@@ -1,0 +1,120 @@
+.section {
+  padding: 60px 0;
+  text-align: center;
+  margin: 0;
+}
+
+.section h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+.section h1 span {
+  color: var(--main-color);
+  margin-right: 4px;
+}
+
+.underline {
+  display: block;
+  text-align: center;
+  width: 8rem;
+  background-color: var(--main-color);
+  height: 4px;
+  border-radius: 2px;
+  margin: 0 auto 0 auto;
+}
+
+.section-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  padding: 60px 0;
+}
+
+.section-center a {
+  text-decoration: none;
+}
+
+article {
+  flex-basis: calc((100% - 90px) / 4);
+  border-radius: 10px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.3s;
+}
+@media (max-width: 991px) {
+  article {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+@media (max-width: 767px) {
+  article {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media (max-width: 576px) {
+  article {
+    flex-basis: 100%;
+    min-width: 300px;
+  }
+}
+
+article:hover {
+  transform: scale(1.08);
+}
+
+article:hover img {
+  filter: grayscale();
+}
+article img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+article .info {
+  padding: 1rem;
+}
+
+article .info h2 {
+  margin: 5px 0;
+}
+article .info h4 {
+  margin: 5px 0;
+}
+
+article .info p {
+  margin: 2px 0;
+  color: rgb(180, 173, 173);
+}
+
+article button {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  width: 80px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+article .button a {
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(179, 218, 250);
+}
+
+.button:hover a {
+  color: var(--main-color);
+}
